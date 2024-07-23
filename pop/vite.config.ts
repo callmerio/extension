@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => {
 
     plugins: [crx({ manifest }), react()],
     resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.jsx'],
       alias: {
         "@": path.resolve(__dirname, "./src"),
       },
